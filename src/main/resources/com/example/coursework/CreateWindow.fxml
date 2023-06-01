@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="534.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.CreateController">
+   <children>
+      <Pane layoutX="492.0" layoutY="45.0" prefHeight="233.0" prefWidth="231.0">
+         <children>
+            <Label layoutX="50.0" text="Types of ships">
+               <font>
+                  <Font name="Baskerville Old Face" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="150.0" layoutY="44.0" onMouseClicked="#ship4Clicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../coursework/images/4x_main.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="150.0" layoutY="91.0" onMouseClicked="#ship3Clicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../coursework/images/3x_main.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="150.0" layoutY="138.0" onMouseClicked="#ship2Clicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../coursework/images/2x_main.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="150.0" layoutY="185.0" onMouseClicked="#ship1Clicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../coursework/images/1x_main.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="166.0" layoutY="76.0" prefHeight="20.0" prefWidth="16.0" text="-">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="166.0" layoutY="28.0" text="-">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="166.0" layoutY="124.0" prefHeight="20.0" prefWidth="16.0" text="-">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="166.0" layoutY="172.0" prefHeight="20.0" prefWidth="16.0" text="-">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="count4ship" layoutX="192.0" layoutY="45.0" text="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="count3ship" layoutX="192.0" layoutY="93.0" text="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="count2ship" layoutX="192.0" layoutY="141.0" text="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="count1ship" layoutX="192.0" layoutY="189.0" text="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <GridPane fx:id="field" layoutX="52.0" layoutY="73.0" prefHeight="375.0" prefWidth="375.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Button fx:id="continueBtn" layoutX="542.0" layoutY="476.0" mnemonicParsing="false" onAction="#continueClicked" prefHeight="38.0" prefWidth="132.0" text="Continue" />
+      <GridPane layoutX="52.0" layoutY="45.0" prefHeight="28.0" prefWidth="375.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="54.0" prefWidth="85.0" text="A">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="80.0" prefWidth="105.0" text="B" GridPane.columnIndex="1">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="67.0" prefWidth="120.0" text="C" GridPane.columnIndex="2">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="81.0" text="D" GridPane.columnIndex="3">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="71.0" text="E" GridPane.columnIndex="4">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="43.0" prefWidth="80.0" text="F" GridPane.columnIndex="5">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="43.0" prefWidth="82.0" text="G" GridPane.columnIndex="6">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="37.0" prefWidth="62.0" text="H" GridPane.columnIndex="7">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="38.0" prefWidth="76.0" text="I" GridPane.columnIndex="8">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="59.0" prefWidth="88.0" text="J" GridPane.columnIndex="9">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="14.0" layoutY="73.0" prefHeight="375.0" prefWidth="38.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="41.0" prefWidth="65.0" text="1">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="47.0" prefWidth="48.0" text="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="44.0" prefWidth="63.0" text="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="52.0" prefWidth="73.0" text="4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="48.0" prefWidth="84.0" text="5" GridPane.rowIndex="4">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="48.0" prefWidth="94.0" text="6" GridPane.rowIndex="5">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="56.0" prefWidth="82.0" text="8" GridPane.rowIndex="7">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="51.0" prefWidth="79.0" text="7" GridPane.rowIndex="6">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="51.0" prefWidth="84.0" text="9" GridPane.rowIndex="8">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="48.0" prefWidth="85.0" text="10" GridPane.rowIndex="9">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Label fx:id="c_decks" layoutX="636.0" layoutY="368.0" prefHeight="24.0" prefWidth="38.0">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l_selected_ship" layoutX="492.0" layoutY="330.0" text="Selected ship - ..." visible="false">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l_count_decks" layoutX="492.0" layoutY="368.0" text="Left to set decks - " visible="false">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l_select_ship" layoutX="492.0" layoutY="330.0" text="Select ship" visible="false">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l_info" layoutX="493.0" layoutY="406.0" text="Error: 0 ships of this type left" visible="false">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="52.0" layoutY="476.0" mnemonicParsing="false" onAction="#removeshipClicked" prefHeight="38.0" prefWidth="132.0" text="Remove ship" />
+      <Button layoutX="295.0" layoutY="476.0" mnemonicParsing="false" onAction="#removeallClicked" prefHeight="38.0" prefWidth="132.0" text="Remove all ships" />
+      <Label fx:id="nameLabel" layoutX="27.0" layoutY="14.0" text="name">
+         <font>
+            <Font name="Baskerville Old Face" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="waitingLabel" layoutX="495.0" layoutY="481.0" text="Waiting for an opponent" visible="false">
+         <font>
+            <Font name="Baskerville Old Face" size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="555.0" layoutY="278.0" mnemonicParsing="false" onAction="#randomClicked" prefHeight="28.0" prefWidth="106.0" text="Random ships" />
+<!--      <Button layoutX="492.0" layoutY="283.0" mnemonicParsing="false" onAction="#randomClicked" prefHeight="38.0" prefWidth="132.0" text="Random" />-->
+   </children>
+</AnchorPane>
